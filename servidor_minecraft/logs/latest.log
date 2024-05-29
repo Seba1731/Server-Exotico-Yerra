@@ -1,55 +1,29 @@
-[01:42:54] [main/INFO]: Loading Minecraft 1.20.4 with Fabric Loader 0.15.11
-[01:42:54] [main/INFO]: Loading 4 mods:
-	- fabricloader 0.15.11
-	   \-- mixinextras 0.3.5
-	- java 21
-	- minecraft 1.20.4
-[01:42:54] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/workspaces/Server-Exotico-Yerra/servidor_minecraft/libraries/net/fabricmc/sponge-mixin/0.13.3+mixin.0.8.5/sponge-mixin-0.13.3+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
-[01:43:03] [main/ERROR]: Failed to load properties from file: server.properties
-java.nio.file.NoSuchFileException: server.properties
-	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
-	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
-	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
-	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
-	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
-	at net.minecraft.class_3808.method_16727(class_3808.java:62) ~[server-intermediary.jar:?]
-	at net.minecraft.class_3806.method_16714(class_3806.java:138) ~[server-intermediary.jar:?]
-	at net.minecraft.class_3807.<init>(class_3807.java:12) ~[server-intermediary.jar:?]
-	at net.minecraft.server.Main.main(Main.java:112) ~[server-intermediary.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470) ~[fabric-loader-0.15.11.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) ~[fabric-loader-0.15.11.jar:?]
+[02:12:52] [main/INFO]: Loading Minecraft 1.20.4 with Fabric Loader 0.15.11
+[02:12:52] [main/WARN]: Mod resolution failed
+[02:12:52] [main/INFO]: Immediate reason: [HARD_DEP_NO_CANDIDATE appleskin 2.5.1+mc1.20.3 {depends fabric-api @ [*]}, ROOT_FORCELOAD_SINGLE appleskin 2.5.1+mc1.20.3]
+[02:12:52] [main/INFO]: Reason: [HARD_DEP appleskin 2.5.1+mc1.20.3 {depends fabric-api @ [*]}, HARD_DEP balm-fabric 9.0.6 {depends fabric-api @ [*]}, HARD_DEP bettercombat 1.8.6+1.20.4 {depends fabric-api @ [*]}, HARD_DEP bettercombat 1.8.6+1.20.4 {depends player-animator @ [>=1.0.0]}, HARD_DEP entityculling 1.6.5 {depends fabric-api @ [*]}, HARD_DEP forgeconfigapiport 20.4.3 {depends fabric-api @ [>=0.91.1]}, HARD_DEP geckolib 4.4.4 {depends fabric-api @ [>=0.95.4+1.20.4]}, HARD_DEP hangglider 20.4.1 {depends fabric-api @ [>=0.95.3]}, HARD_DEP hangglider 20.4.1 {depends puzzleslib @ [>=20.4.14]}]
+[02:12:52] [main/INFO]: SERVER environment disabled: [betteranimationscollection]
+[02:12:52] [main/INFO]: Fix: add [add:fabric-api 0.95.4+1.20.4 ([[0.95.4+1.20.4,∞)]), add:player-animator 1.0.0 ([[1.0.0,∞)]), add:puzzleslib 20.4.14 ([[20.4.14,∞)])], remove [], replace []
+[02:12:52] [main/ERROR]: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Install fabric-api, version 0.95.4+1.20.4 or later.
+	 - Install player-animator, version 1.0.0 or later.
+	 - Install puzzleslib, version 20.4.14 or later.
+More details:
+	 - Mod 'AppleSkin' (appleskin) 2.5.1+mc1.20.3 requires any version of fabric-api, which is missing!
+	 - Mod 'Balm' (balm-fabric) 9.0.6 requires any version of fabric-api, which is missing!
+	 - Mod 'Better Combat' (bettercombat) 1.8.6+1.20.4 requires any version of fabric-api, which is missing!
+	 - Mod 'Better Combat' (bettercombat) 1.8.6+1.20.4 requires version 1.0.0 or later of player-animator, which is missing!
+	 - Mod 'EntityCulling' (entityculling) 1.6.5 requires any version of fabric-api, which is missing!
+	 - Mod 'Forge Config API Port' (forgeconfigapiport) 20.4.3 requires version 0.91.1 or later of fabric-api, which is missing!
+	 - Mod 'GeckoLib 4' (geckolib) 4.4.4 requires version 0.95.4+1.20.4 or later of fabric-api, which is missing!
+	 - Mod 'Hang Glider' (hangglider) 20.4.1 requires version 0.95.3 or later of fabric-api, which is missing!
+	 - Mod 'Hang Glider' (hangglider) 20.4.1 requires version 20.4.14 or later of puzzleslib, which is missing!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.15.11.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:195) ~[fabric-loader-0.15.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146) ~[fabric-loader-0.15.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) ~[fabric-loader-0.15.11.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) ~[fabric-loader-0.15.11.jar:?]
 	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:69) ~[fabric-loader-0.15.11.jar:?]
 	at net.fabricmc.installer.ServerLauncher.main(ServerLauncher.java:69) ~[fabric-server-launch.jar:1.0.1]
-[01:43:03] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[01:43:05] [main/INFO]: No existing world data, creating new world
-[01:43:07] [main/INFO]: Loaded 7 recipes
-[01:43:07] [main/INFO]: Loaded 1271 advancements
-[01:43:08] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[01:43:08] [Server thread/INFO]: Loading properties
-[01:43:08] [Server thread/INFO]: Default game type: SURVIVAL
-[01:43:08] [Server thread/INFO]: Generating keypair
-[01:43:08] [Server thread/INFO]: Starting Minecraft server on *:25565
-[01:43:08] [Server thread/INFO]: Using epoll channel type
-[01:43:08] [Server thread/WARN]: **** FAILED TO BIND TO PORT!
-[01:43:08] [Server thread/WARN]: The exception was: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
-[01:43:08] [Server thread/WARN]: Perhaps a server is already running on that port?
-[01:43:08] [Server thread/ERROR]: Encountered an unexpected exception
-java.lang.IllegalStateException: Failed to initialize server
-	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:699) ~[server-intermediary.jar:?]
-	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:270) ~[server-intermediary.jar:?]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[01:43:08] [Server thread/ERROR]: This crash report has been saved to: /workspaces/Server-Exotico-Yerra/servidor_minecraft/./crash-reports/crash-2024-05-29_01.43.08-server.txt
-[01:43:08] [Server thread/INFO]: Stopping server
-[01:43:08] [Server thread/INFO]: Saving worlds
-[01:43:08] [Server thread/ERROR]: Exception stopping the server
-java.lang.NullPointerException: Cannot invoke "net.minecraft.class_3218.method_8621()" because "$$5" is null
-	at net.minecraft.server.MinecraftServer.method_3723(MinecraftServer.java:547) ~[server-intermediary.jar:?]
-	at net.minecraft.server.MinecraftServer.method_3782(MinecraftServer.java:606) ~[server-intermediary.jar:?]
-	at net.minecraft.class_3176.method_3782(class_3176.java:542) ~[server-intermediary.jar:?]
-	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:718) ~[server-intermediary.jar:?]
-	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:270) ~[server-intermediary.jar:?]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
