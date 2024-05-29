@@ -1,7 +1,7 @@
 ---- Minecraft Crash Report ----
-// Why is it breaking :(
+// Ooh. Shiny.
 
-Time: 2024-05-29 01:41:01
+Time: 2024-05-29 01:43:08
 Description: Exception in server tick loop
 
 java.lang.IllegalStateException: Failed to initialize server
@@ -20,7 +20,7 @@ Details:
 	Operating System: Linux (amd64) version 6.5.0-1021-azure
 	Java Version: 21.0.3, Microsoft
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
-	Memory: 2869619464 bytes (2736 MiB) / 3061841920 bytes (2920 MiB) up to 10737418240 bytes (10240 MiB)
+	Memory: 1942772296 bytes (1852 MiB) / 2147483648 bytes (2048 MiB) up to 10737418240 bytes (10240 MiB)
 	CPUs: 2
 	Processor Vendor: GenuineIntel
 	Processor Name: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
@@ -36,7 +36,7 @@ Details:
 	Graphics card #0 deviceId: unknown
 	Graphics card #0 versionInfo: unknown
 	Virtual memory max (MB): 3964.29
-	Virtual memory used (MB): 5515.09
+	Virtual memory used (MB): 5338.89
 	Swap memory total (MB): 0.00
 	Swap memory used (MB): 0.00
 	JVM Flags: 2 total; -Xms2G -Xmx10G
