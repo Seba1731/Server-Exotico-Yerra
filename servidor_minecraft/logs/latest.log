@@ -1,22 +1,14 @@
-[02:13:38] [main/INFO]: Loading Minecraft 1.20.4 with Fabric Loader 0.15.11
-[02:13:38] [main/WARN]: Mod resolution failed
-[02:13:38] [main/INFO]: Immediate reason: [HARD_DEP_NO_CANDIDATE bettercombat 1.8.6+1.20.4 {depends fabric-api @ [*]}, ROOT_FORCELOAD_SINGLE bettercombat 1.8.6+1.20.4]
-[02:13:38] [main/INFO]: Reason: [HARD_DEP bettercombat 1.8.6+1.20.4 {depends fabric-api @ [*]}, HARD_DEP bettercombat 1.8.6+1.20.4 {depends cloth-config @ [>=11.0.0]}, HARD_DEP bettercombat 1.8.6+1.20.4 {depends player-animator @ [>=1.0.0]}, HARD_DEP hangglider 20.4.1 {depends fabric-api @ [>=0.95.3]}, HARD_DEP hangglider 20.4.1 {depends puzzleslib @ [>=20.4.14]}]
-[02:13:38] [main/INFO]: SERVER environment disabled: [betteranimationscollection]
-[02:13:38] [main/INFO]: Fix: add [add:fabric-api 0.95.3 ([[0.95.3,∞)]), add:cloth-config 11.0.0 ([[11.0.0,∞)]), add:player-animator 1.0.0 ([[1.0.0,∞)]), add:puzzleslib 20.4.14 ([[20.4.14,∞)])], remove [], replace []
-[02:13:38] [main/ERROR]: Incompatible mods found!
+[02:32:09] [main/INFO]: Loading Minecraft 1.20.4 with Fabric Loader 0.15.11
+[02:32:10] [main/WARN]: Mod resolution failed
+[02:32:10] [main/INFO]: Immediate reason: [HARD_DEP_NO_CANDIDATE jei 17.0.0.30 {depends fabric-api @ [>=0.93.1+1.20.4]}, ROOT_FORCELOAD_SINGLE jei 17.0.0.30]
+[02:32:10] [main/INFO]: Reason: [HARD_DEP jei 17.0.0.30 {depends fabric-api @ [>=0.93.1+1.20.4]}]
+[02:32:10] [main/INFO]: Fix: add [add:fabric-api 0.93.1+1.20.4 ([[0.93.1+1.20.4,∞)])], remove [], replace []
+[02:32:10] [main/ERROR]: Incompatible mods found!
 net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
 A potential solution has been determined, this may resolve your problem:
-	 - Install fabric-api, version 0.95.3 or later.
-	 - Install cloth-config, version 11.0.0 or later.
-	 - Install player-animator, version 1.0.0 or later.
-	 - Install puzzleslib, version 20.4.14 or later.
+	 - Install fabric-api, version 0.93.1+1.20.4 or later.
 More details:
-	 - Mod 'Better Combat' (bettercombat) 1.8.6+1.20.4 requires any version of fabric-api, which is missing!
-	 - Mod 'Better Combat' (bettercombat) 1.8.6+1.20.4 requires version 11.0.0 or later of cloth-config, which is missing!
-	 - Mod 'Better Combat' (bettercombat) 1.8.6+1.20.4 requires version 1.0.0 or later of player-animator, which is missing!
-	 - Mod 'Hang Glider' (hangglider) 20.4.1 requires version 0.95.3 or later of fabric-api, which is missing!
-	 - Mod 'Hang Glider' (hangglider) 20.4.1 requires version 20.4.14 or later of puzzleslib, which is missing!
+	 - Mod 'Just Enough Items' (jei) 17.0.0.30 requires version 0.93.1+1.20.4 or later of fabric-api, which is missing!
 	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.15.11.jar:?]
 	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:195) ~[fabric-loader-0.15.11.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146) ~[fabric-loader-0.15.11.jar:?]
